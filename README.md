@@ -4,6 +4,17 @@ Project created folloing the NestJs Course for Beginners - Create a REST API:
 
 https://www.youtube.com/watch?v=GHTA143_b-s
 
+## Install and start Postgres
+```bash
+$ docker compose up -d
+```
+
+## Login to the Postgres Docker service
+```bash
+$ docker exec -it nestjs-api-tutorial_dev-db_1 /bin/bash
+```
+
+
 ## Installation
 
 ```bash
