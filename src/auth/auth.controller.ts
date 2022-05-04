@@ -11,14 +11,13 @@ export class AuthController {
     // POST /auth/signup/
     @Post('signup')
     signup() {
-        // return { msg: 'Signed Up' }; // nestjs will handle returned data type for you.
-        return 'Signed Up'
+        return this.AuthService.signup();
     }
 
     // POST /auth/signin/
     @Post('signin')
     signin() {
-        return 'Signed In'
+        return this.AuthService.signin();
     }
 
 }
