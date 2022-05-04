@@ -1,5 +1,6 @@
 import { Body, Controller, Post } from "@nestjs/common";
 import { AuthService } from './auth.service';
+import { AuthDto } from './dto';
 
 @Controller('auth')
 export class AuthController {
@@ -8,11 +9,11 @@ export class AuthController {
     constructor(private AuthService: AuthService) {
     }
 
+
     // POST /auth/signup/
     @Post('signup')
     // dto = Data Transfer Object
-    signup(@Body() dto: any) {
-
+    signup(@Body() dto: AuthDto) {
         console.log({
             dto,
         });
