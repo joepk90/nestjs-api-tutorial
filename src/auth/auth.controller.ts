@@ -11,6 +11,7 @@ export class AuthController {
     // POST /auth/signup/
     @Post('signup')
     signup() {
+        // return { msg: 'Signed Up' }; // nestjs will handle returned data type for you.
         return 'Signed Up'
     }
 
