@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: 123
       POSTGRES_DB: nest
     networks:
-      - nest_js_api_tutorial
+      - nestjs_api_tutorial
   # test-db:
   #   image: postgres:13
   #   ports:
@@ -19,6 +19,6 @@ services:
   #     POSTGRES_PASSWORD: 123
   #     POSTGRES_DB: nest
   #   networks:
-  #     - nest_js_api_tutorial
+  #     - nestjs_api_tutorial
 networks:
-  nest_js_api_tutorial:
+  nestjs_api_tutorial:
