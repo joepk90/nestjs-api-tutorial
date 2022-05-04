@@ -14,10 +14,7 @@ export class AuthController {
     @Post('signup')
     // dto = Data Transfer Object
     signup(@Body() dto: AuthDto) {
-        console.log({
-            dto,
-        });
-        return this.AuthService.signup();
+        return this.AuthService.signup(dto);
     }
 
     // POST /auth/signin/
